@@ -22,7 +22,7 @@ from sklearn.cluster import KMeans
 #%% Needed for dash
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']                                    #External stylesheet
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets,suppress_callback_exceptions=True)   #App creation and suppression of the callback exceptions
-
+server = app.server
 #%%read the excel file 
 df = pd.read_csv('raw_data_all_cleaned.csv')    #loading data to be used for the exploratory section        
 
@@ -524,4 +524,4 @@ def render_content(tab):              #used to rendering content of the first ta
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
