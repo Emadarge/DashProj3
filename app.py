@@ -1019,7 +1019,7 @@ encoded_image_dailyp = base64.b64encode(open(image_dpattern, 'rb').read())
 
 #% Needed for dash
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP],suppress_callback_exceptions=True)   #App creation and suppression of the callback exceptions
-
+server = app.server
 #% Style for the tabs
 SIDEBAR_STYLE = {
     "position": "fixed",
