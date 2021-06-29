@@ -25,3 +25,5 @@ scikit-image==0.18.1
 scikit-learn==0.24.1
 six==1.15.00
 Werkzeug==1.0.1
+dash_bootstrap_components==0.12.2
+xgboost==1.4.0
